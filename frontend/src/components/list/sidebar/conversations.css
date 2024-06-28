@@ -1,0 +1,122 @@
+/* Existing styles for conversation lists */
+.conversation_lists {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 20px; /* Adjust padding as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+}
+
+.conversation_lists .chatList {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  border-radius: 15px;
+  margin-bottom: 5px;
+
+}
+
+.conversation_lists .chatList:hover{
+  background-color: #5b97f71d; /* Slightly transparent dark background on hover/selected */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.conversation_lists .chatList.selected {
+  background-color: #72a1eb; /* Example background color for selected chat */
+
+}
+
+.conversation_lists .chatList.selected .texts span,
+.conversation_lists .chatList.selected .texts p{
+ color: white;
+}
+
+.conversation_lists .chatList .top {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.conversation_lists .chatList .top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.conversation_lists .chatList .texts {
+  flex: 1;
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.conversation_lists .chatList .texts span {
+  font-weight: 500;
+  font-size: 13px;
+  color: black;
+  font-family: 'Bold';
+}
+
+.conversation_lists .chatList .texts p {
+  font-size: 11px;
+  color: #7C7C7D; /* Light gray color for message text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: 'SemiBold';
+  /* margin-top: 3px; */
+}
+
+/* Indicator for unseen messages */
+.conversation_lists .chatList .unseen-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(69, 157, 254, 1); /* Red color for indicator */
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+/* Highlight styles for last messages */
+.conversation_lists .chatList .texts .lastMessage-unseen {
+  font-family: 'SemiBold';
+  color: #111; /* White color for unseen messages */
+}
+
+.conversation_lists .chatList .texts .lastMessage-seen {
+  font-family: 'Medium';
+  color: #7C7C7D; /* Light gray color for seen messages */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .conversation_lists .chatList .texts p {
+    width: 100px; /* Adjust width for smaller screens */
+  }
+}
+
+
+.conversation_lists .chatList .top .avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.conversation_lists .chatList .top .avatar-wrapper img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.conversation_lists .chatList .top .avatar-wrapper .active-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50; /* Example color for active indicator */
+  border-radius: 50%;
+  border: 2px solid #fff; /* Optional: border to make the indicator stand out */
+}

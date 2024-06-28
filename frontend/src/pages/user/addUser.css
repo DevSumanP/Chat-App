@@ -1,0 +1,118 @@
+.addUser {
+  width: max-content;
+  height: max-content;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 1 2 4px #dedede;
+}
+
+.addUser .user {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addUser h3 {
+  font-size: 16px;
+  font-family: "SemiBold";
+  padding: 20px 20px 10px 20px;
+}
+
+.addUser .modalHeader{
+  display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 56px;
+}
+
+.addUser .modalHeader img{
+  height: 17px;
+  width: 17px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.addUser .user .detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 25px;
+}
+.addUser .user .detail img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.addUser .user .detail span {
+  font-size: 12px;
+  font-family: "Medium";
+}
+.addUser .bottom{
+    display: flex;
+    align-items:end;
+    justify-content: flex-end;
+    padding: 20px 20px 20px 10px
+
+}
+.addUser button {
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  background-color: #3366FF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Medium';
+}
+
+.addUser .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 20px 8px 20px;
+}
+.addUser .search .searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.addUser .search .searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1a1a1a;
+  font-size: 13px;
+  font-family: 'Medium';
+  flex: 1;
+}
+.addUser.search .searchBar img {
+  width: 20px;
+  height: 20px;
+}
+.searchBar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.searchBar button img {
+  width: 20px;
+  height: 20px;
+}

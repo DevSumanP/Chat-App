@@ -1,0 +1,55 @@
+.userInfo{
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 3px 20px;
+  display: flex;
+}
+
+.userInfo .item {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(194, 206, 236);
+  border-radius: 14px;
+}
+
+.userInfo .top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 0px;
+}
+.userInfo .item .profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userInfo .item .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.userInfo .item .texts span {
+  font-weight: 500;
+  font-family: 'Medium';
+  font-size: 13px;
+  color: black;
+}
+.userInfo .item .texts p {
+  font-size: 11px;
+  font-family: 'Medium';
+  font-weight: 500;
+  color: rgb(16, 16, 16);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  letter-spacing: 1;
+}
+
+.userInfo .top .logout{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+}
